@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color:black;
+    font-family: roboto, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: -50px;
+    font-family: Georgia, serif;
+    font-weight: 100;
+    font-size: clamp(14px, 7vw, 20px);
+}
+.logo {
+    position: relative;
+    display:flex;
+    width: 100px;
+    margin-top: 10px;
+    
+}
+nav a {
+    color: white;
+    padding: 0 30px;
+    font-size: large;
+}
+.content{
+    display: flex;
+    margin: 3% 5%;
+}
+h1{
+    color: aliceblue;
+    padding: 100px 10vw;
+}
