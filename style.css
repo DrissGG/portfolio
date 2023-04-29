@@ -1,42 +1,79 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 90px;
 }
 
-body{
-    background-color:black;
-    font-family: roboto, sans-serif;
+/* modifier la taille de la police des liens dans la barre de navigation 
+    lorsque la largeur de l'écran est inférieure à 768 pixels. */
+@media (max-width: 768px) {
+    .navbar-nav a {
+        font-size: 18px;
+    }
 }
 
-.navbar{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    margin-top: -50px;
-    font-family: Georgia, serif;
-    font-weight: 100;
-    font-size: clamp(14px, 7vw, 20px);
+body {
+    font-family: goldich, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+
 }
+
 .logo {
-    position: relative;
-    display:flex;
-    width: 100px;
-    margin-top: 10px;
-    
+    display: flex;
+    margin-left: 50px;
+    width: 150px;
+    filter: brightness(80%);
 }
-nav a {
+
+nav {
+    display: flex;
+    /* background-color: antiquewhite;     */
+    background-color: transparent;
+}
+.navbar {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar.navbar-scroll {
+    background-color: rgba(0, 0, 255, 0.8);
+    backdrop-filter: blur(1px);
+}
+
+#nav {
+    align-content: center;
+    justify-content: center;
+}
+
+#nav a {
     color: white;
-    padding: 0 30px;
     font-size: large;
 }
-.content{
-    display: flex;
-    margin: 3% 5%;
+.bg-image {
+    position: relative;
+    height: 900px;
+    background-size: cover;
+    background-position: center center;
 }
-h1{
-    color: aliceblue;
-    padding: 100px 10vw;
+
+
+#leTitre {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -500px;
+    text-align: center;
+    color: rgb(147, 27, 27);
+}
+
+.button{
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
