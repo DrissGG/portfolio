@@ -72,8 +72,13 @@ nav {
     color: rgb(147, 27, 27);
 }
 
-.button{
+.button {
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+.btn-custom{
+    background-color: #ff0000; /* couleur personnalisée */
+    color: #fff; /* couleur du texte */
 }
