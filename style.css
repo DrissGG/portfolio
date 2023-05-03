@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Oswald:wght@200;300;500&family=Playfair+Display:wght@600&family=Vina+Sans&display=swap');
+
 *,
 ::before,
 ::after {
@@ -16,9 +19,10 @@
 }
 
 body {
-    font-family: goldich, sans-serif;
-    font-style: normal;
-    font-weight: 600;
+    font-family: Georgia, serif;
+    /* font-style: normal;*/
+    font-weight: 600px; 
+    overflow-x: hidden;
 
 }
 
@@ -55,23 +59,37 @@ nav {
     /* effet 3D */
     text-shadow: 2px 2px 0px #000, 4px 4px 0px #000, 6px 6px 0px #000;
 }
-.container{
-    position: absolute;
-    max-width: 100%;
-}
-.bg-image {
+.monContainer{
     position: relative;
-    height: 900px;
-    background-size: cover;
-    /* background-position: center center; */
-    
-}
-.blur-image{
-    filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  
 }
 
+.monContainer img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* Floutage de l'image back */
+    /* filter: blur(2px); */
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    color: white;    
 
-#leTitre {
+}
+
+/* #leTitre {
     position: relative;
     z-index: 1;
     display: flex;
@@ -82,8 +100,8 @@ nav {
     text-align: center;
     color: white;
     /* effet d'écriture en 3D en CSS */
-    text-shadow: 2px 2px 0px #000, 4px 4px 0px #000, 6px 6px 0px #000;
-}
+    /* text-shadow: 2px 2px 0px #000, 4px 4px 0px #000, 6px 6px 0px #000;
+} */ 
 
 .button {
     position: relative;
@@ -92,43 +110,222 @@ nav {
 }
 
 .btn-custom{
-    background-color: #ff0000; /* couleur personnalisée */
+    background-color: #03224c; /* couleur personnalisée */
     color: #fff; /* couleur du texte */
 }
 .btn-custom:hover {
     background: black;
     color: white;    
 }
+/* LE responsive  de la classs p2*/
+@media screen and (max-width: 768px) {
+    .p2, .Mescompetences {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: justify;
+    }
+}
 
-.p2 img,p{
-    display: flex;  
+.p2{
+    padding-top: 100px;
+
+}
+.p2 h1{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.p2 img{
-    position: absolute;
-    margin-left: 10%;
-    width: 20%;
-    height: auto;
-}
-.p2 p{
-    position: relative;
-    margin-top: 30px;
-    margin-left: 40%;
-    margin-right: 10%;
+.apropos{
+    /* background-color: red;     */
     font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6% 0;
+    
 }
 
-#formation{
-    background-image: url('assets/developpeur-informatique-ynov.jpg');
-    color: white;
-    background-size: cover;
-    height: 300px;
+.apropos img{
+    height: 300%;
+    width: 300%;
+    
+    margin: 0 200px;
+}
+.apropos p{
+    display: flex;
+    overflow-y: hidden;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+.actual{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    z-index: 1;
+}
+.actual img{
+    position: absolute;
+    height: 100%;
     width: 100%;
+    left: 0;
+    top: 0;
+}
+#formation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    color: white;    
+    
+
+}
+#formation h1,h3{
     font-weight: bold;
-    /* effet d'écriture en 3D en CSS */
-    text-shadow: 2px 2px 0px #000, 4px 4px 0px #000, 6px 6px 0px #000;
+    font-size: 70px;
+}
+
+.Mescompetences{
+    padding-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#competences{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+#competences p{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-exp{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; 
+}
+.logo-exp img{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 1.6em; 
+
+} 
+
+ button {
+    background-color: #03224c;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 200px;
+    cursor: pointer;
+  }
+  button a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .ref{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    z-index: 1;
+    flex-direction: column;
+}
+.ref img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.ref p, .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: white;    
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/* ###### MES PROJETS ###### */
+.Projets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Projets h1{
+    justify-content: center;
+    align-items: center;
+}
+.projets1{
+    display: flex;
+
 }
 
 
 
-  
+
+/* CONTACT FOOTER */
+.ctnContact{
+    padding-bottom: 6rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    z-index: 1;
+    flex-direction: column;
+    
+}
+.ctnContact h2{
+    font-size: 3.6em;
+    position: relative;
+    padding-top: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.ctnContact p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: rgb(5, 4, 4);    
+    
+    font-size: 30px;
+}
