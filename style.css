@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Oswald:wght@200;300;500&family=Playfair+Display:wght@600&family=Vina+Sans&display=swap');
 
 *,
@@ -21,7 +20,7 @@
 body {
     font-family: Georgia, serif;
     /* font-style: normal;*/
-    font-weight: 600px; 
+    font-weight: 600px;
     overflow-x: hidden;
 
 }
@@ -29,8 +28,9 @@ body {
 .logo {
     display: flex;
     margin-left: 50px;
-    width: 150px;
+    width: auto;
     filter: brightness(80%);
+    height: 60px;
 }
 
 nav {
@@ -38,19 +38,20 @@ nav {
     /* background-color: antiquewhite;     */
     background-color: transparent;
 }
+
 .navbar {
     transition: background-color 0.5s ease-in-out;
 }
 
 .navbar.navbar-scroll {
-    background-color: rgba(0, 0, 255, 0.8);
-    backdrop-filter: blur(1px);
+    background-color: #03224c;
+    backdrop-filter: blur(2px);
 }
 
-#nav {
+/* #nav {
     align-content: center;
     justify-content: center;
-}
+}  */
 
 #nav a {
     color: #f9f7f7;
@@ -59,7 +60,78 @@ nav {
     /* effet 3D */
     text-shadow: 2px 2px 0px #000, 4px 4px 0px #000, 6px 6px 0px #000;
 }
-.monContainer{
+
+/* Le bouton pour ouvrir la navbar */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+/* L'icône du bouton pour ouvrir la navbar */
+.navbar-toggler-icon {
+    background-color: #fff;
+    border-radius: 2px;
+    height: 2px;
+    width: 18px;
+}
+
+/* L'icône du bouton pour ouvrir la navbar - les barres horizontales */
+.navbar-toggler-icon:before {
+    background-color: #fff;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    top: 0;
+    width: 18px;
+}
+
+/* L'icône du bouton pour ouvrir la navbar - les barres verticales */
+.navbar-toggler-icon:after {
+    background-color: #fff;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    top: -6px;
+    width: 18px;
+}
+
+/* La couleur des liens dans la navbar */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+/* La couleur des liens dans la navbar au survol de la souris */
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+/* La couleur du bouton de la navbar */
+.btn-custom {
+    background-color: red;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+/* La couleur du bouton de la navbar au survol de la souris */
+.btn-custom:hover {
+    background-color: #fff;
+    color: #007bff;
+}
+
+.monContainer {
     position: relative;
     display: flex;
     justify-content: center;
@@ -67,10 +139,10 @@ nav {
     width: 100vw;
     height: 100vh;
     z-index: 1;
-  
+
 }
 
-.monContainer img{
+.monContainer img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -79,13 +151,14 @@ nav {
     /* Floutage de l'image back */
     /* filter: blur(2px); */
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     z-index: 1;
-    color: white;    
+    color: white;
 
 }
 
@@ -100,8 +173,8 @@ nav {
     text-align: center;
     color: white;
     /* effet d'écriture en 3D en CSS */
-    /* text-shadow: 2px 2px 0px #000, 4px 4px 0px #000, 6px 6px 0px #000;
-} */ 
+/* text-shadow: 2px 2px 0px #000, 4px 4px 0px #000, 6px 6px 0px #000;
+} */
 
 .button {
     position: relative;
@@ -109,57 +182,66 @@ nav {
     justify-content: center;
 }
 
-.btn-custom{
-    background-color: #03224c; /* couleur personnalisée */
-    color: #fff; /* couleur du texte */
+.btn-custom {
+    background-color: #03224c;
+    /* couleur personnalisée */
+    color: #fff;
+    /* couleur du texte */
 }
+
 .btn-custom:hover {
     background: black;
-    color: white;    
+    color: white;
 }
+
 /* LE responsive  de la classs p2*/
 @media screen and (max-width: 768px) {
-    .p2, .Mescompetences {
-    font-size: 1rem;
-    padding: 1rem;
-    text-align: justify;
+
+    .p2,
+    .Mescompetences {
+        font-size: 1rem;
+        padding: 1rem;
+        text-align: justify;
     }
 }
 
-.p2{
+.p2 {
     padding-top: 100px;
 
 }
-.p2 h1{
+
+.p2 h1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.apropos{
+
+.apropos {
     /* background-color: red;     */
     font-size: x-large;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 6% 0;
-    
+
 }
 
-.apropos img{
+.apropos img {
     height: 300%;
     width: 300%;
-    
     margin: 0 200px;
 }
-.apropos p{
+
+.apropos p {
     display: flex;
     overflow-y: hidden;
-    margin-right: 10%;
-    margin-left: 10%;
+     margin-right: 8%;
+    /* margin-left: 8%; */
+    overflow-x: hidden;
 }
 
 
-.actual{
+.actual {
     position: relative;
     display: flex;
     justify-content: center;
@@ -168,29 +250,33 @@ nav {
     height: 50vh;
     z-index: 1;
 }
-.actual img{
+
+.actual img {
     position: absolute;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
 }
-#formation{
+
+#formation {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     z-index: 1;
-    color: white;    
-    
+    color: white;
+
 
 }
-#formation h1,h3{
+
+#formation h1,
+h3 {
     font-weight: bold;
     font-size: 70px;
 }
 
-.Mescompetences{
+.Mescompetences {
     padding-top: 100px;
     position: relative;
     display: flex;
@@ -198,14 +284,16 @@ nav {
     align-items: center;
 }
 
-#competences{
+#competences {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    
 }
-#competences p{
+
+#competences p {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10%;
@@ -214,30 +302,42 @@ nav {
     align-items: center;
 }
 
-.logo-exp{
+.logo-exp {
     padding-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem; 
+    gap: 2rem;
+    max-width: 100vw;
 }
-.logo-exp img{
+
+.logo-exp img {
     display: flex;
     justify-content: space-between;
     width: 200px;
 }
 
 
-figure{
+figure {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    gap: 1.6em; 
+    gap: 1.6em;
 
-} 
+}
 
- button {
+figure img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+button {
     background-color: #03224c;
     border: none;
     padding: 12px 24px;
@@ -247,13 +347,14 @@ figure{
     font-size: 16px;
     margin: 40px 200px;
     cursor: pointer;
-  }
-  button a{
+}
+
+button a {
     text-decoration: none;
     color: white;
-  }
+}
 
-  .ref{
+.ref {
     position: relative;
     display: flex;
     justify-content: center;
@@ -263,44 +364,103 @@ figure{
     z-index: 1;
     flex-direction: column;
 }
-.ref img{
+
+.ref img {
     position: absolute;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
 }
-.ref p, .name{
+
+.ref p,
+.name {
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    color: white;    
+    color: white;
     font-weight: bold;
     font-size: 30px;
 }
 
 
 /* ###### MES PROJETS ###### */
-.Projets{
+.Projets {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Projets h1{
+
+.Projets h1 {
     justify-content: center;
     align-items: center;
 }
-.projets1{
+
+.projets1 {
     display: flex;
 
 }
 
+
+
+
+#Projets {
+    display: block;
+    position: relative;
+}
+
+#Projets h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.projet1 {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100vw;
+    overflow: hidden;
+
+}
+
+
+.projet1 figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 1.6em; 
+    
+
+}  
+
+.projet1 img {
+    max-width: 500px;
+    max-height: 500px;
+    
+}
+
+.projet1 a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    width: 350px;
+    height: 250px;
+    border: 10px solid #03224c;
+    background-color: #03224c;
+    padding: 10px;    
+}
 
 
 
 /* CONTACT FOOTER */
-.ctnContact{
+.ctnContact {
     padding-bottom: 6rem;
     position: relative;
     display: flex;
@@ -310,22 +470,25 @@ figure{
     height: 50vh;
     z-index: 1;
     flex-direction: column;
-    
+    margin-top: 5%;
+
 }
-.ctnContact h2{
+
+.ctnContact h2 {
     font-size: 3.6em;
     position: relative;
     padding-top: 4rem;
     text-transform: uppercase;
     text-align: center;
 }
+
 .ctnContact p {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    color: rgb(5, 4, 4);    
-    
+    color: rgb(5, 4, 4);
+
     font-size: 30px;
 }

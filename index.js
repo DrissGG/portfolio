@@ -1,8 +1,10 @@
 
 $(document).ready(function () {
-    let t = $('.bg-image').height();
+    console.log("pouet")
+    let t = $('.monContainer').height();
+    console.log(t)
     $(window).scroll(function () {
-        if ($(this).scrollTop() > calc(t - 20)) {
+        if ($(this).scrollTop() > t - 20) {
             $('.navbar').addClass('navbar-scroll');
         } else {
             $('.navbar').removeClass('navbar-scroll');

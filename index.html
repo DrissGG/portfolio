@@ -38,7 +38,7 @@
 
             <!-- la navbar de la collapse -->
             <div class="collapse navbar-collapse " id="nav">
-                <ul class="navbar-nav justify-content-center">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Accueil</a>
                     </li>
@@ -46,10 +46,10 @@
                         <a class="nav-link" href="#profil">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#competences">Compétences</a>
+                        <a class="nav-link" href="#comp">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Projets">Projets</a>
+                        <a class="nav-link" href="#lesProjets">Projets</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -86,7 +86,7 @@
             <div class="container">
                 <div id="leTitre">
                     <h1 style="font-size: 80px;">Driss Gazzaoui</h1>
-                    <p><strong style="font-size: xx-large;">Développeur Web - Intégrateur Junior</strong></p>
+                    <p><strong style="font-size: xx-large; display: flex; justify-content: center;">Développeur Web  (Junior)</strong></p>
                 </div>
 
                 <div class="button">
@@ -101,18 +101,17 @@
             <h1>A PROPOS DE MOI</h1>
 
             <div class="apropos">
-                <img src="assets/businessman.png">
-                <p>Hello ! Je m’appelle Julien Dahy, développeur Web junior devenu Tech Manager.<br>
-                    Auparavant, j’ai effectué plusieurs années en tant que téléconseiller dans l’expertise technique
-                    (Canal+ / Orange) ce qui m’a permis d’acquérir de très bonnes compétences
-                    telles que l’organisation, l’écoute, le conseil ainsi que des qualités relationnelles importantes.
-                    J’ai profité du retour à mon Alsace natale pour effectuer une reconversion professionnelle dans le
-                    Développement Web,
-                    domaine qui m’intéressait depuis de nombreuses années.
-                    J’ai donc suivi la formation Développeur Intégrateur au sein du CCI Campus de Colmar.
-                    Suite à l’obtention du Bac+2, j’ai obtenu la confiance d’Annei qui m’a embauché en septembre 2020 et
-                    chez qui je suis devenu Tech Manager en 2022.
-                    Je continue donc à travailler chaque jour avec envie, motivation et des idées plein la tête.
+                <img src="assets/emo.png">
+                <p>Bonjour ! Je m’appelle Driss Gazzaoui, développeur Web junior en constante progression.<br>
+
+                    Au fil de mes projets personnels et professionnels, j'ai acquis de solides compétences en matière d'organisation, d'écoute, de conseil et de relations humaines. Passionné depuis longtemps par le développement web, j'ai saisi l'opportunité de suivre une année d'autoformation pour ensuite intégrer une entreprise en alternance dans ce domaine.
+                    
+                    <br> J'ai ainsi suivi la formation Concepteur Développeur d'Applications au sein de DIGINAMIC Montpellier. Chaque jour, je m'investis avec enthousiasme, motivation et de nombreuses idées en tête.
+                    
+                    Je reste constamment à l'affût des dernières tendances et technologies du web, afin de continuer à progresser et d'offrir des solutions innovantes à mes clients.<br> Je suis passionné par mon métier et j'ai hâte de relever de nouveaux défis.
+                    
+                    <br>N'hésitez pas à me contacter pour discuter de vos projets ou pour toute autre information. Je serai ravi d'échanger avec vous !
+                    
                 </p>
                 <!-- <div class="text-center">
                     <button class="btn btn-custom btn-lg btn-cv">Télécharger mon CV</button>
@@ -129,7 +128,7 @@
             </div>
         </div>
 
-        <div class="Mescompetences">
+        <div class="Mescompetences" id="comp">
 
             <div id="competences">
                 <h1>COMPÉTENCES </h1>
@@ -140,25 +139,25 @@
                 </p>
 
                 <div class="logo-exp">
-                    <figure><img src="/assets/html.png" alt="">
+                    <figure><img src="assets/html.png" alt="">
                         <figcaption>HTML</figcaption>
                     </figure>
-                    <figure><img src="/assets/css.png" alt="">
+                    <figure><img src="assets/css.png" alt="">
                         <figcaption>CSS</figcaption>
                     </figure>
-                    <figure><img src="/assets/js.png" alt="">
+                    <figure><img src="assets/js.png" alt="">
                         <figcaption>JAVASCRIPT</figcaption>
                     </figure>
-                    <figure><img src="/assets/java.png" alt="">
-                        <figcaption>JAVA</figcaption>
-                    </figure>
-                    <figure><img src="/assets/wordpress.png" alt="">
-                        <figcaption>WORDPRESS</figcaption>
-                    </figure>
-                    <figure><img src="/assets/react.png" alt="">
+                    <figure><img src="assets/react.png" alt="">
                         <figcaption>REACT</figcaption>
                     </figure>
-                    <figure><img src="/assets/python.png" alt="">
+                    <figure><img src="assets/java.png" alt="">
+                        <figcaption>JAVA</figcaption>
+                    </figure>
+                    <figure><img src="assets/wordpress.png" alt="">
+                        <figcaption>WORDPRESS</figcaption>
+                    </figure>
+                    <figure><img src="assets/python.png" alt="">
                         <figcaption>PYTHON</figcaption>
                     </figure>
 
@@ -181,15 +180,25 @@
 
         </section>
 
-        <section>
+        <section id="lesProjets">
             <div id="Projets">
-                <h1>Mes Projets </h1>
+                <h1>MES PROJETS </h1>
                 <div class="projet1">
-                    <img src="assets/shooter.png" alt="">
+
+                    <figure><img src="assets/shooter.png" alt="">
+                        <figcaption><a href="https://github.com/DrissGG/shooter" target="_blank">SHOOTER</a></figcaption>
+                        <p>Création d'un Jeux en 2D</p>
+                    </figure>
+                    <figure><img src="assets/paris.png" alt="">
+                        <figcaption><a href="https://github.com/DrissGG/Paris.com" target="_blank">Paris.fr</a></figcaption>
+                        <p>Création d'une page Web </p>
+                    </figure>
+                    <figure><img src="assets/asso.png" alt="">
+                        <figcaption><a href="" target="_blank">Association GSC</a></figcaption>
+                        <p>Création d'un site Internet en Wordpress</p>
+                    </figure>
                 </div>
 
-
-                <div class="name"></div>
             </div>
 
         </section>
@@ -209,14 +218,6 @@
             <p>Par mail : <a href=""> drissgazzaoui1986@hotmail.com</a> </p>
             <p>Par linkedIn : <a href="https://www.linkedin.com/in/driss-gazzaoui-765762206/">Gazzaoui Driss</a></p>
         </section>
-
-
-
-
-
-
-
-
     </main>
 
 
