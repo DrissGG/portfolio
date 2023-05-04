@@ -273,7 +273,7 @@ nav {
 #formation h1,
 h3 {
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .Mescompetences {
@@ -296,8 +296,8 @@ h3 {
 #competences p {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10%;
-    font-size: xx-large;
+    margin-top: 3%;
+    font-size: x-large;
     justify-content: center;
     align-items: center;
 }
@@ -376,8 +376,7 @@ button a {
 .ref p,
 .name {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     z-index: 1;
     color: white;
     font-weight: bold;
@@ -386,35 +385,19 @@ button a {
 
 
 /* ###### MES PROJETS ###### */
-.Projets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Projets h1 {
-    justify-content: center;
-    align-items: center;
-}
-
-.projets1 {
-    display: flex;
-
-}
-
-
 
 
 #Projets {
     display: block;
     position: relative;
-}
+    padding-top: 100px;
+} 
 
 #Projets h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    
 }
 
 .projet1 {
@@ -428,7 +411,6 @@ button a {
     overflow: hidden;
 
 }
-
 
 .projet1 figure{
     display: flex;
@@ -467,17 +449,19 @@ button a {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 50vh;
+    height: 100%;
     z-index: 1;
     flex-direction: column;
     margin-top: 5%;
+    background-image: url(assets/paris.jpg) ;
+    background-size: 100% 100%;
+    
 
 }
 
 .ctnContact h2 {
     font-size: 3.6em;
     position: relative;
-    padding-top: 4rem;
     text-transform: uppercase;
     text-align: center;
 }
