@@ -11,10 +11,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="correction.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
+    <link rel="shortcut icon" type="image/png" href="assets/emo2r.png" class="favicon" />
+    <title>Portfolio Driss Gazzaoui</title>
 
-    <title>Portfolio</title>
 
 </head>
 
@@ -28,7 +31,7 @@
 
             <!-- Logo  -->
             <div class="logo">
-                <img src="assets/thumbnail_1b1817ec0765a915156b79bdd504c589-sticker.png">
+                <img  src="assets/thumbnail_1b1817ec0765a915156b79bdd504c589-sticker.png">
             </div>
 
             <!-- Menu Hamburger -->
@@ -63,22 +66,7 @@
     </header>
 
     <main>
-        <!-- <div class="bg-image blur-image" style="background-image: url('assets/istockphoto-1386341272-170667a.jpg');">
-            <div class="container">
-                <div id="leTitre">
-                    <h1 style="font-size: 80px;">Driss Gazzaoui</h1>
-                    <p><strong style="font-size: xx-large;">Développeur Web - Intégrateur Junior</strong></p>
-                </div>
         
-                <div class="button">
-                    <a href="#profil" class="btn btn-custom btn-lg">Qui suis-je ?</a>
-                </div>
-                <div id="profil">
-                    
-                </div>
-    
-            </div>
-        </div> -->
         <div class="monContainer">
 
             <img id="bg-image" src="assets/pc_background.jpg" class="pouet" alt="" srcset="">
@@ -87,7 +75,9 @@
                 <div id="leTitre">
                     <h1 style="font-size: 80px;">Driss Gazzaoui</h1>
                     <p><strong style="font-size: xx-large; display: flex; justify-content: center;">Développeur Web
-                            (Junior)</strong></p>
+                            (Junior)</strong>
+                    </p>
+
                 </div>
 
                 <div class="button">
@@ -122,9 +112,6 @@
                     serai ravi d'échanger avec vous !
 
                 </p>
-                <!-- <div class="text-center">
-                    <button class="btn btn-custom btn-lg btn-cv">Télécharger mon CV</button>
-                </div> -->
             </div>
         </div>
 
@@ -162,6 +149,9 @@
                     </figure>
                     <figure><img src="assets/java.png" alt="">
                         <figcaption>JAVA</figcaption>
+                    </figure>
+                    <figure><img src="assets/c-plus-plus-program-logo-image.png" alt="">
+                        <figcaption>C++</figcaption>
                     </figure>
                     <figure><img src="assets/wordpress.png" alt="">
                         <figcaption>WORDPRESS</figcaption>
@@ -221,17 +211,55 @@
 
 
 
-        <section id="contact">
-            <div  class="ctnContact" >
-                <h2>Contactez-moi</h2>
-                <p class="catchSentence">Intéressée par mon profil ou simplement pour échanger ? N'hésitez pas à me
-                    contacter, je serais ravie de discuter avec vous.</p>
-
-                <p>Par mail : <a href=""> drissgazzaoui1986@hotmail.com</a> </p>
-                <p>Par linkedIn : <a href="https://www.linkedin.com/in/driss-gazzaoui-765762206/">Gazzaoui Driss</a></p>
-
+        <div class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row" id="contact">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <a  target="_blank" href="https://www.linkedin.com/in/driss-gazzaoui-765762206/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                    </svg>
+                                </a>
+                                <div class="cta-text">
+                                    <h4><a href="https://www.linkedin.com/in/driss-gazzaoui-765762206/"  target="_blank">Linkedin</a>
+                                    </h4>
+                                    <span>Driss Gazzaoui</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                                <div class="cta-text">
+                                    <h4>Contact</h4>
+                                    <span>06.51.31.49.52</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                                    class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM0 13.373l5.693-3.163L0 6.873v6.5Z" />
+                                </svg>
+                                <div class="cta-text">
+                                    <h4>E-mail</h4>
+                                    <span>drissgazzaoui1986@hotmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
     </main>
 
 

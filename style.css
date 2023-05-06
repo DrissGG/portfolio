@@ -440,39 +440,68 @@ button a {
 }
 
 
+/* FOOTER */
 
-/* CONTACT FOOTER */
-.ctnContact {
-    padding-bottom: 6rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-section {
     width: 100vw;
-    height: 100%;
-    z-index: 1;
-    flex-direction: column;
-    margin-top: 5%;
-    background-image: url(assets/paris.jpg) ;
-    background-size: 100% 100%;
-    
-
-}
-
-.ctnContact h2 {
-    font-size: 3.6em;
+    background: #151414;
+    /* background: #03224c; */
     position: relative;
-    text-transform: uppercase;
-    text-align: center;
+  }
+  .footer-cta {
+    border-bottom: 1px solid #373636;
+  }
+  .single-cta svg {    
+    color: #ff5e14;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+    justify-content: space-between;
+  }
+  .cta-text {
+    padding-left: 15px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .cta-text span {
+    color: #757575;
+    font-size: 15px;
+  }
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }
+ 
+
+@media  print, screen and (min-width: 560px) {
+    .container{
+    }
+}
+@media  print, screen and (min-width: 770px) {
+    .container{
+    }
 }
 
-.ctnContact p {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    color: rgb(5, 4, 4);
-
-    font-size: 30px;
+@media  print, screen and (min-width: 1000px) {
+      .single-cta svg{
+    }
+}
+@media  print, screen and (max-width: 1300px) {
+    .apropos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .apropos img{
+        max-width: 50%;
+    }
+    .apropos p{
+        margin-left: 8%;
+    }
 }
