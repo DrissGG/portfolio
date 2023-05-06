@@ -44,14 +44,12 @@ nav {
 }
 
 .navbar.navbar-scroll {
-    background-color: #03224c;
-    backdrop-filter: blur(2px);
+    background-color: #03224c40;
+    backdrop-filter: blur(2px); 
+    
 }
 
-/* #nav {
-    align-content: center;
-    justify-content: center;
-}  */
+
 
 #nav a {
     color: #f9f7f7;
@@ -65,6 +63,7 @@ nav {
 .navbar-toggler {
     border: none;
     outline: none;
+    margin: 0;
 }
 
 /* L'icône du bouton pour ouvrir la navbar */
@@ -73,6 +72,7 @@ nav {
     border-radius: 2px;
     height: 2px;
     width: 18px;
+    
 }
 
 /* L'icône du bouton pour ouvrir la navbar - les barres horizontales */
@@ -83,7 +83,7 @@ nav {
     display: block;
     height: 2px;
     position: relative;
-    top: 0;
+    top: -6px;
     width: 18px;
 }
 
@@ -451,6 +451,9 @@ button a {
   .footer-cta {
     border-bottom: 1px solid #373636;
   }
+  .single-cta{
+    display: flex;
+  }
   .single-cta svg {    
     color: #ff5e14;
     font-size: 30px;
@@ -481,6 +484,7 @@ button a {
 
 @media  print, screen and (min-width: 560px) {
     .container{
+        margin: 0
     }
 }
 @media  print, screen and (min-width: 770px) {
@@ -499,7 +503,8 @@ button a {
         flex-direction: column;
     }
     .apropos img{
-        max-width: 50%;
+        max-width: 30%;
+        margin-bottom: 5%;
     }
     .apropos p{
         margin-left: 8%;
