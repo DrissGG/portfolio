@@ -202,7 +202,7 @@ nav {
     .Mescompetences {
         font-size: 1rem;
         padding: 1rem;
-        text-align: justify;
+        /* text-align: justify; */
     }
 }
 
@@ -246,6 +246,7 @@ nav {
     position: relative;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     width: 100vw;
     height: 50vh;
